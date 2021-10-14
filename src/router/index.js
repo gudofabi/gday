@@ -9,15 +9,15 @@ const routes = [
     name: 'Home',
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
     meta: {
-      title: 'Malouf Coding Challenge',
+      title: 'Contact Us - Gday',
       metaTags: [
         {
           name: 'description',
-          content: 'The home page of malouf.'
+          content: 'The contact page of gday.'
         },
         {
           property: 'og:description',
-          content: 'The home page of our example app.'
+          content: 'The contact page of our example app.'
         }
       ]
     }

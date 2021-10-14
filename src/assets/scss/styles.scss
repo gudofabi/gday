@@ -4,36 +4,22 @@
     Feel free to change the path of the font to the location of your choice.
     All font faces are included in the assets package.
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 
 @font-face {
-	font-family: 'Neutra';
-	src: url('../fonts/Neutra2Text-Book.otf');
+	font-family: 'Bitter';
+	src: url('../fonts/bitter_regular.ttf');
 }
-
-@font-face {
-	font-family: 'Neutra Bold';
-	src: url('../fonts/Neutra2Text-Bold.otf');
-}
-
-@font-face {
-	font-family: 'Neutra Semibold';
-	src: url('../fonts/Neutra2Text-Demi.otf');
-}
-
-@font-face {
-	font-family: 'Neutra Italic';
-	src: url('../fonts/Neutra2Text-BookItalic.otf');
-}
-
 
 /****** General Styles ******/
 
 :root{
-    --color-blue: #9CCAEA;
+    --color-blue: #007ec5;
+    --colo-green: #82bb26;
     --color-light-blue: #A7D2E4;
     --color-light-grey: #EAEAEA;
     --color-med-grey: #cccccc;
-    --color-dark-grey: #2A2A2A;
+    --color-dark-grey: #3e3e3f;
     --color-white: #ffffff;
     --mobile-media-queries: 576px;
     --tablet-media-queries: 768px;
@@ -46,14 +32,14 @@ html * {
 }
 
 body {
-	font-family: 'Georgia';
+	font-family: 'Poppins';
     font-size: 16px;
 	padding: 0px;
 	margin: 0px;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Neutra';
+    font-family: 'Poppins';
     font-variant-numeric: lining-nums;
     text-transform: uppercase;
     color: var(--color-dark-grey);
@@ -73,28 +59,21 @@ h5{font-size: 20px;}
 h6{font-size: 18px;}
 
 p{
-    font-family: 'Georgia';
+    font-family: 'Bitter';
     font-size: 16px;
     line-height: 18px;
-}
-p.sans-serif{
-    font-family: 'Neutra';
-    font-variant-numeric: lining-nums;
-}
-p.sans-serif.bold{
-    font-family: 'Neutra Bold';
-}
-p.sans-serif.italic{
-    font-family: 'Neutra Italic';
 }
 
 a {
     cursor: pointer;
-    font-family: 'Georgia';
-	font-size: 16px;
+    font-family: 'Poppins';
+	font-size: 14px;
 	color: var(--color-blue);
-	font-style: italic;
-	font-weight: bold;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        
+    }
 }
 a:visited, a:focus, a:active, a:hover {
     text-decoration: none !important;
@@ -114,7 +93,7 @@ a:hover {
 }
 
 .btn {
-    font-family: 'Neutra Semibold';
+    font-family: 'Poppins';
 	letter-spacing: 1px;
 	text-transform: uppercase;
     border-radius: 0px;
@@ -149,4 +128,75 @@ ul {
 
 img {
      width: 100%;
+}
+
+
+ul.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+
+    li {
+        padding-right: 20px;
+        position: relative;
+        padding-left: 10px;
+
+        &:after {
+            content: '/';
+            position: absolute;
+            right: 0;
+            color: var(--color-med-grey);
+        }
+
+        &:last-child {
+            color: #919191;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    
+}
+
+.form-group {
+    label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 600;
+        color: var(--color-dark-grey);
+
+    }
+
+    .form-control {
+        border-radius: 30px;
+
+    }
+}
+
+.btn {
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+
+        
+    }
+}
+
+.btn-primary {
+    background-color: var(--colo-green);
+    border-color: var(--colo-green);
+
+    &:hover, &:active {
+        background-color: var(--colo-green);
+        border-color: var(--colo-green);
+    }
 }

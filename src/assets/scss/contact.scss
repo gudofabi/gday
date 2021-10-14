@@ -1,0 +1,59 @@
+.gday-contact {
+    padding: 40px 0 80px;
+
+    .contact-details {
+
+        @media screen and (min-width: 768px) {
+            padding-right: 30px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 600;
+
+        }
+
+        .sub-title {
+            font-size: 14px;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            color: var(--color-med-grey);
+
+        }
+
+        .contacts {
+            background-color: var(--color-light-grey);
+            padding: 30px 20px;
+            margin: 25px 0 35px;
+            border-radius: 8px;
+
+            .detail {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+
+                svg {
+                    width: 25px;
+                    // height: 20px;
+                    margin-right: 10px;
+                    color: var(--color-blue);
+                    
+                }
+
+                span {
+                    font-size: 14px;
+
+                    @media screen and (min-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        
+
+    }
+
+    .form-cover {
+        padding: 0px 20px;
+    }
+}

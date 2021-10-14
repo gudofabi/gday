@@ -1,4 +1,4 @@
-# malouf-coding-challenge
+# gday-coding-challenge
 
 ## Project setup
 ```
@@ -22,4 +22,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-"# malouf-landing-page" 
+"# gday-landing-page" 
