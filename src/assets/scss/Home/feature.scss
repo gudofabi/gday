@@ -1,0 +1,263 @@
+.feature-section {
+  .featured-product-container {
+    padding: 120px 0;
+    background-image: url("../img/supima-intro-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 70% 38%;
+    .content {
+      text-align: left;
+      margin-top: 100px;
+      h3, h4, a {
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        font-family: 'Neutra Semibold', sans-serif;
+        font-style: normal;
+      }
+      a {
+        color: var(--color-white);
+        font-family: 'Neutra', sans-serif;
+        font-weight: 100;
+      }
+    }
+  }
+  .features-of-product-container {
+    padding: 30px 0;
+    .features-cover{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      .feature{
+        width: 20%;
+        padding: 20px 10px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        .warranty {
+          z-index: 1;
+          position: absolute;
+          top: 5%;
+          right: 15%;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url('../img/5-year-warranty.png');
+        }
+        img {
+          width: 180px;
+          height: 100%;
+          margin: 20px auto 30px;
+        }
+        .title {
+          text-align: center;
+          font-family: 'Neutra Bold', sans-serif;
+          padding: 5px 0 15px;
+        }
+        .description {
+          letter-spacing: 1px;
+          line-height: 1.3;
+        }
+      }
+    }
+    .learn-more-container{
+      letter-spacing: 1px;
+      padding: 100px 0 150px;
+    }
+    .video-container {
+      .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .thumbnail {
+          width: calc(100% - 50%);
+          padding: 0 20px;
+        }
+        .redirect-button {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  
+}
+
+// IPAD PRO PORTRAIT
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .feature-section {
+      .featured-product-container {
+        padding: 30px 0;
+        height: 400px;
+        background-size: 60%;
+        background-position: 80% 30%;
+        .content{
+          margin-top: 60px;
+        }
+      }
+      .features-of-product-container {
+        padding: 0px 0 10px;
+        .features-cover{
+          flex-direction: row;
+          flex-wrap: wrap;
+          .feature{
+            width: 40%;
+            padding: 30px;
+          }
+        }
+        .learn-more-container {
+          padding: 70px 0;
+        }
+        .video-container {
+          .video .thumbnail {
+            width: calc(100% - 30%);
+          }
+        }
+      }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .feature-section {
+      .featured-product-container {
+        padding: 30px 0;
+        height: 400px;
+        background-size: 60%;
+        background-position: 80% 30%;
+        .content{
+          margin-top: 60px;
+          h3 {
+            font-size: 24px;
+          }
+          h5 {
+            font-style: 18px;
+          }
+        }
+      }
+      .features-of-product-container {
+        padding: 0px 0 10px;
+        .features-cover{
+          flex-direction: row;
+          flex-wrap: wrap;
+          .feature{
+            width: 40%;
+            padding: 30px;
+          }
+        }
+        .learn-more-container {
+          padding: 70px 0;
+        }
+      }
+    }
+}
+
+// IPAD PRO
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .feature-section {
+      .featured-product-container {
+        padding: 30px 0;
+        height: 500px;
+        background-size:65%;
+        background-position: 80% 30%;
+        .content{
+          margin-top: 150px;
+        }
+      }
+      .features-of-product-container {
+
+        .learn-more-container {
+          padding: 70px 0;
+        }
+        .video-container {
+          .video .thumbnail{
+            width: calc(100% - 40%);
+          }
+        }
+      }
+    }
+}
+// COMMON TABLET
+@media only screen and (max-width: 812px) {
+  .feature-section {
+    .featured-product-container {
+      padding: 30px 0;
+      height: 400px;
+      background-size: 60%;
+      background-position: 80% 30%;
+      .content{
+        margin-top: 60px;
+      }
+    }
+    .features-of-product-container {
+      padding: 0px 0 10px;
+      .features-cover{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .feature{
+          width: 50%;
+          padding: 20px;
+        }
+      }
+      .learn-more-container {
+        padding: 70px 0;
+      }
+      .video-container {
+        .video .thumbnail{
+          width: calc(100% - 10%);
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+// MOBILE
+@media only screen and (max-width: 576px) {
+  .feature-section {
+    .featured-product-container {
+      padding: 60px 0;
+      height: 600px;
+      background-size: contain;
+      background-position: 100% 80%;
+      .content {
+        text-align: center;
+        margin-top: 0px;
+        
+      }
+    }
+    .features-of-product-container {
+      padding: 0px 0 10px;
+      .features-cover{
+        flex-direction: column;
+        .feature{
+          width: 100%;
+          padding: 20px;
+        }
+      }
+      .learn-more-container {
+        padding: 70px 0;
+      }
+      .video-container {
+        .video .thumbnail{
+          width: calc(100% - 10%);
+          padding: 0;
+        }
+      }
+    }
+  }
+}

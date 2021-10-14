@@ -1,0 +1,119 @@
+.malouf-footer {
+    align-items: center;
+    justify-content: center;
+    .upper-footer {
+        padding: 30px 0 50px;
+        width: calc(100% - 10%);
+        .footer-container {
+            .title {
+                font-size: 14px;
+                font-family: 'Neutra Bold', sans-serif;
+            }
+            ul li {
+                a {
+                    font-family: 'Neutra Bold', sans-serif;
+                    font-style: normal;
+                    color: var(--color-dark-grey);
+                    line-height: 2.6;
+                }
+                span {
+                    line-height: 2.6;
+                    font-family: 'Neutra';
+                    opacity: .8;
+                }
+            }
+            .helpful-links li a {
+                font-family: 'Neutra';
+                opacity: .8;
+                font-weight: 300;
+            }
+            .latest-news-list {
+                .post-cover {
+                    display: flex;
+                    margin-top: 1.3rem;
+                    padding: 0;
+                    img {
+                        margin-right: 20px;
+                        max-width: 90px;
+                        max-height: 90px;
+                    }
+                    .info {
+                        a {
+                            color: var(--color-light-blue);
+                            font-family: 'Georgia';
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        border-top: 1px solid rgba(42,42,42,.23);
+        width: calc(100% - 5%);
+        padding: 25px 0 20px;
+        p{
+            margin: 0;
+            font-size: 12px;
+            color: var(--color-dark-grey);
+            opacity: 0.5;
+            font-weight: 600;
+        }
+    }
+}
+// IPAD PRO PORTRAIT
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .malouf-footer {
+        .upper-footer {
+            width: calc(100% - 10%);
+            .fourth-con {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .malouf-footer {
+        .upper-footer {
+            width: calc(100% - 10%);
+            .fourth-con {
+                display: none;
+            }
+        }
+    }
+}
+
+// COMMON TABLET
+@media only screen and (max-width: 812px) {
+    .malouf-footer {
+        .upper-footer {
+            width: calc(100% - 10%);
+            .fourth-con {
+                display: none;
+            }
+        }
+    }
+}
+// MOBILE
+@media only screen and (max-width: 576px) {
+    .malouf-footer {
+        .upper-footer {
+            width: calc(100% - 10%);
+            .third-con, .fourth-con {
+                display: none;
+            }
+        }
+        .bottom-footer {
+            text-align: center;
+        }
+    }
+}

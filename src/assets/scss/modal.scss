@@ -1,0 +1,42 @@
+.malouf-modal-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+    overflow: hidden;
+    .malouf-modal {
+        width: calc(100% - 50%);
+        .modal-body .close {
+            font-size: 45px;
+        }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .malouf-modal-container .malouf-modal {
+        width: calc(100% - 20%);
+    }
+}
+
+// COMMON TABLET
+@media only screen and (max-width: 812px) {
+    .malouf-modal-container .malouf-modal {
+        width: calc(100% - 30%);
+    }
+}
+
+// MOBILE
+@media only screen and (max-width: 576px) {
+    .malouf-modal-container .malouf-modal {
+        width: calc(100% - 10%);
+    }
+}

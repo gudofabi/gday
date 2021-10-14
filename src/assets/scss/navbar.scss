@@ -1,0 +1,122 @@
+/****** NAVIGATION ******/
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    .menu-button-container {
+        display: none;
+        .menu-container{
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-dark-grey);
+            text-align: center;
+            padding-top: 8px;
+        }
+        .malouf-icon {
+            display: none;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Neutra Bold';
+        }
+        .menu {
+            font-family: 'Neutra Bold';
+        }
+    }
+    .left-corner {
+        .navbar-brand, .mobile-navbar-brand{
+            font-style: normal;
+            font-size: 24px;
+            padding: 0;
+            color: var(---dark-gray);
+        }
+        .mobile-navbar-brand  {
+            display: none;
+        }
+    }
+    .links-container {
+        .links li {
+            list-style: none;
+            a{
+                font-family: 'Neutra', sans-serif;
+                font-weight: 100;
+                font-style: normal;
+                color: var(---dark-gray);
+                text-transform: capitalize;
+                color: var(--color-med-grey);
+                padding: 0px 20px;
+                &:hover, &:active {
+                    color: var(--color-dark-grey);
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+    .right-corner{
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                list-style-type: none;
+                padding: 0px 20px;
+                &:first-child {
+                    border-right: 1px solid #a4a4a4;
+                }
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+                a{
+                    font-family: 'Neutra', sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-size: 12px;
+                    color: var(---dark-gray);
+                    .lock{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 812px) {  
+    .navbar {
+        padding: 0;
+        .menu-button-container {
+            display: flex;
+            align-items: center;
+            .malouf-icon {
+                display: none;
+            }
+        }
+        .left-corner {
+            display: block;
+        }
+        .links-container {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        padding: 0;
+        .menu-button-container {
+            display: flex;
+            align-items: center;
+            .menu {
+                display: none;
+            }
+            .malouf-icon {
+                display: block;
+            }
+        }
+        .left-corner {
+            display: none;
+        }
+        .links-container {
+            display: none;
+        }
+    }
+}
+
